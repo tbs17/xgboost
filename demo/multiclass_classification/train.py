@@ -49,3 +49,6 @@ pred_prob = bst.predict(xg_test).reshape(test_Y.shape[0], 6)
 pred_label = np.argmax(pred_prob, axis=1)
 error_rate = np.sum(pred_label != test_Y) / test_Y.shape[0]
 print('Test error using softprob = {}'.format(error_rate))
+
+
+## can you add performance here?
